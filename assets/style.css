@@ -9,8 +9,20 @@
 header {
     background-color: rgba(0, 0, 0, 0.611);
     position: relative;
+    font-weight: 800;
 }
 header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece para mejor contraste */
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.611);
+    position: relative;
+}
+footer::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -36,6 +48,12 @@ header::before {
 
 .viewEnd { /* Vista de la segunda sección */
     background-image: url(img/endstoneBackground.webp); /* Fondo del End */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.viewPortal { /* Vista del portal */
+    background-image: url(img/portalBackground.webp); /* Fondo del portal */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

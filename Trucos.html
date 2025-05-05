@@ -1,57 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wikicraft: Trucos</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/style.css">
-    </head>
-<body>
-    <header class="text-center py-2">
-        <div class="container mt-5">
-            <h1 class="text-center style text-white">Bienvenido a Wikicraft</h1>
-            <p class="text-center text-white">La solucion para todo minecraftero</p>
-        </div>
-    <div class="px-3 py-2">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <ul class="nav col-12 my-2 justify-content-center my-md-0">
-                    <li>
-                        <a href="index.html" class="nav-link text-black tex-decoration-none">
-                            <img src="assets/img/enchanting.gif" alt="Logo" class="d-block mx-auto mb-1" width="50" height="50">
-                            INICIO
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Guias.html" class="nav-link text-black tex-decoration-none">
-                            <img src="assets/img/a.png" alt="Cubo de Minecraft" class="d-block mx-auto mb-1"
-                            width="50" height="50">
-                            GUIAS
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Bloques.html" class="nav-link text-black tex-decoration-none">
-                            <img src="assets/img/netherack.webp" alt="Netherack" class="d-block mx-auto mb-1"
-                            width="50" height="50">
-                            BLOQUES Y CRIATURAS
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Trucos.html" class="nav-link text-black tex-decoration-none">
-                            <img src="assets/img/end.png" alt="Bloque del End" class="d-block mx-auto mb-1"
-                                width="50" height="50">
-                            TRUCOS Y CURIOSIDADES
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
 
-<footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 Wikicraft. Todos los derechos reservados.</p>
-</footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikicraft: Bloques y Mobs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="viewPortal">
+    <header class="text-white py-3">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Wikicraft</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContenido">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContenido">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <img src="assets/img/enchanting.gif" width="30" height="30" class="me-1"> INICIO
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Guias.html">
+                                <img src="assets/img/netherack.webp" width="30" height="30" class="me-1"> GUÍAS
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Bloques.html">
+                                <img src="assets/img/end.png" width="30" height="30" class="me-1"> BLOQUES
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Trucos.html">
+                                <img src="assets/img/Firework_Rocket_JE2_BE2.webp" width="30" height="30" class="me-1">
+                                TRUCOS
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5 mb-5 text-center text-black"
+        style="background-color: #ffffffc2; border-radius: 10px; padding: 20px;">
+        <section id="supervivencia" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Trucos de Supervivencia</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/diamantesfacil.png" class="card-img-top" alt="Truco 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Encontrar Diamantes Fácilmente</h5>
+                                <p class="card-text">Un truco para aumentar tus posibilidades de encontrar diamantes en
+                                    las profundidades.</p>
+                                <span class="badge bg-success">Principiante</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/granjaComida.jpg" class="card-img-top" alt="Truco 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Granja Automática de Comida</h5>
+                                <p class="card-text">Construye una granja eficiente para nunca quedarte sin alimento.
+                                </p>
+                                <span class="badge bg-warning">Intermedio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/PrimeraNoche.jpg" class="card-img-top" alt="Truco 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Sobrevivir a la Primera Noche</h5>
+                                <p class="card-text">Consejos esenciales para superar tu primera noche en el mundo de
+                                    Minecraft.</p>
+                                <span class="badge bg-success">Principiante</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="construccion" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Trucos de Construcción</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/casamedieval.jpg" class="card-img-top" alt="Truco 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Construir una Casa Medieval</h5>
+                                <p class="card-text">Ideas y pasos para diseñar una casa calida y confortable.</p>
+                                <span class="badge bg-success">Principiante</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/casamoderna.jpg" class="card-img-top" alt="Truco 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Construir una Casa Moderna</h5>
+                                <p class="card-text">Ideas y pasos para diseñar una casa moderna y elegante.</p>
+                                <span class="badge bg-info">Avanzado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/castillo.jpg" class="card-img-top" alt="Truco 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Construir un Mega Castillo</h5>
+                                <p class="card-text">Ideas y pasos para diseñar un Castillo impenetrable.</p>
+                                <span class="badge bg-danger">Experto</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="exploracion" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Trucos de Exploración</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/ancientcity.jpg"
+                                class="card-img-top" alt="Ancient City">
+                            <div class="card-body">
+                                <h5 class="card-title">Encontrar la Ancient City</h5>
+                                <p class="card-text">Consejos para localizar una Ancient City. El hogar del temible "Warden"</p>
+                                <span class="badge bg-danger">Experto</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/netherfortress.jpg"
+                                class="card-img-top" alt="Nether Fortress">
+                            <div class="card-body">
+                                <h5 class="card-title">Encontrar la Nether Fortress</h5>
+                                <p class="card-text">Consejos para localizar una fortaleza del nether.</p>
+                                <span class="badge bg-info">Avanzado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/pillager.jpg"
+                                class="card-img-top" alt="Pillager Outpost">
+                            <div class="card-body">
+                                <h5 class="card-title">Encontrar los Pillager Outpost</h5>
+                                <p class="card-text">Consejos para localizar rapidamente un Pillager Outpost. Algo sumamente valioso para las granjas de Totems y Esmeraldas.</p>
+                                <span class="badge bg-info">Avanzado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/desert_temple.jpg"
+                                class="card-img-top" alt="Templo del Desierto">
+                            <div class="card-body">
+                                <h5 class="card-title">Encontrar un templo del Desierto</h5>
+                                <p class="card-text">Consejos para localizar un templo del desierto al comienzo del juego.</p>
+                                <span class="badge bg-success">Principiante</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/aldeas.jpg"
+                                class="card-img-top" alt="Aldeas">
+                            <div class="card-body">
+                                <h5 class="card-title">Encontrar una Aldea</h5>
+                                <p class="card-text">Consejos para localizar una Aldea y Comenzar tu survival de manera comoda.</p>
+                                <span class="badge bg-success">Principiante</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/portalend.jpg"
+                                class="card-img-top" alt="Portal al end">
+                            <div class="card-body">
+                                <h5 class="card-title">Encontrar la Stronghold</h5>
+                                <p class="card-text">Consejos para localizar una Stronghold, estructura con la cual podras usar su portal para Visitar el END. Hogar del temible Ender-Dragon.</p>
+                                <span class="badge bg-danger">Experto</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comandos" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Trucos de Comandos</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="assets/img/comandosbasicos.jpg"
+                                class="card-img-top" alt="Truco 7">
+                            <div class="card-body">
+                                <h5 class="card-title">Comandos Útiles para Principiantes</h5>
+                                <p class="card-text">Aprende comandos básicos para teletransportarte, cambiar el clima y
+                                    más.</p>
+                                <span class="badge rounded-pill bg-primary">Comando</span>
+                                <button class="btn btn-sm btn-outline-secondary mt-2">Ver Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2025 Wikicraft. Todos los derechos reservados.</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
