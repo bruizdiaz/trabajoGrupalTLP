@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikicraft: Bloques y Mobs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="viewEnd">
+    <header class="text-white py-3">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Wikicraft</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContenido">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContenido">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <img src="assets/img/enchanting.gif" width="30" height="30" class="me-1"> INICIO
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Guias.html">
+                                <img src="assets/img/netherack.webp" width="30" height="30" class="me-1"> GUÍAS
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Bloques.html">
+                                <img src="assets/img/end.png" width="30" height="30" class="me-1"> BLOQUES
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Trucos.html">
+                                <img src="assets/img/Firework_Rocket_JE2_BE2.webp" width="30" height="30" class="me-1">
+                                TRUCOS
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5 mb-5 text-center text-black"
+        style="background-color: #cdc68b81; border-radius: 10px; padding: 20px;">
+
+        <!-- Section para los bloques -->
+        <section class="mb-5 row justify-content-center">
+            <h2>Tipos de Bloques</h2>
+            <!-- Carrusel para los Bloques Minerales -->
+            <div class="col-md-4 mb-3 carrusel">
+                <div class="card p-3">
+                    <h5 class="text-center">Minerales</h5>
+                    <div id="carouselMinerales" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item">
+                                <img src="assets/img/view3/block/mineral/Block_of_Coal_JE3_BE2.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Bloque de carbón">
+                                <p>Carbón</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/view3/block/mineral/Copper_Block_JE1_BE1.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Bloque de Cobre">
+                                <p>Cobre</p>
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="assets/img/view3/block/mineral/Block_of_Iron_JE3_BE2.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Bloque de Hierro">
+                                <p>Hierro</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/view3/block/mineral/Block_of_Gold_JE6_BE3.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Bloque de Oro">
+                                <p>Oro</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/view3/block/mineral/Block_of_Redstone_JE2_BE2.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Redstone">
+                                <p>Redstone</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/view3/block/mineral/Block_of_Lapis_Lazuli_JE3_BE3.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Bloque de Lapis Lazuli">
+                                <p>Lápiz Lázuli</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/view3/block/mineral/Block_of_Diamond_JE5_BE3.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Bloque de Diamante">
+                                <p>Diamante</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/view3/block/mineral/Block_of_Netherite_JE1_BE1.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Netherite">
+                                <p>Netherite</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMinerales"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselMinerales"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Carrusel para los Bloques de Construcción -->
+            <div class="col-md-4 mb-3 carrusel">
+                <div class="card p-3">
+                    <h5 class="text-center">Construccion</h5>
+                    <div id="carouselConstruccion" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active">
+                                <img src="assets/img/view3/block/construccion/Bloque_de_cuarzo.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Bloque de Cuarzo">
+                                <p>Bloque de Cuarzo</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/view3/block/construccion/Glass.webp" class="d-block mx-auto"
+                                    style="width: 80px;" alt="Bloque de Cristal">
+                                <p>Bloque de Cristal</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/view3/block/construccion/Stone_Brick.webp" class="d-block mx-auto"
+                                    style="width: 80px;" alt="Bloque Ladrillos de Piedra">
+                                <p>Ladrillos de Piedra</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/view3/block/construccion/White_Concrete.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Bloque de Concreto Blanco">
+                                <p>Bloque de Concreto Blanco</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/view3/block/construccion/Oak_Planks_JE5.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Bloque de Tablones de Madera">
+                                <p>Madera de Roble</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselConstruccion"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselConstruccion"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Carrusel para los bloques decorativos -->
+            <div class="col-md-4 mb-3 carrusel">
+                <div class="card p-3">
+                    <h5 class="text-center">Decoracion</h5>
+                    <div id="carouselDecoracion" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active">
+                                <img src="assets/img/view3/block/decoracion/Lantern_JE1_BE1.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Farol">
+                                <p>Farol</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/view3/block/decoracion/Campfire_(S)_JE2_BE2.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Fogata">
+                                <p>Fogata</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/view3/block/decoracion/Decorated_Pot_29_JE2_BE2.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Maceta decorada">
+                                <p>Maceta decorada</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/view3/block/decoracion/Pearlescent_Froglight_JE1.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Luzapo Ocre">
+                                <p>Luzapo Perlada</p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/view3/block/decoracion/Sea_Lantern_JE1.webp"
+                                    class="d-block mx-auto" style="width: 80px;" alt="Sea Lanter">
+                                <p>Linterna del Mar</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDecoracion"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselDecoracion"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                        </button>
+                    </div>
+        </section>
+
+        <section class="mb-5">
+            <h2>Criaturas (Mobs)</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card p-3">
+                        <h5>Hostiles</h5>
+                        <p>Las criaturas hostiles son criaturas agresivas que siempre atacan al jugador a la vista.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card p-3">
+                        <h5>Pasivos</h5>
+                        <p>Las criaturas pasivas son aquellas que no atacan al jugador directamente, incluso cuando son provocadas o atacadas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card p-3">
+                        <h5>Neutrales</h5>
+                        <p>Las criaturas neutrales son criaturas que pueden ser a veces pasivas y a veces hostiles hacia el jugador. Varias se vuelven hostiles al ser atacadas primero, pero otras pueden ser naturalmente hostiles y luego volverse pasivas en ciertas condiciones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="mb-3">Tabla de Criaturas</h2>
+            <div class="table-responsive">
+                <table class="table table-dark table-bordered align-middle text-center">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Elemento</th>
+                            <th>Función</th>
+                            <th>Curiosidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="assets/img/view3/mob/Brown_Horse.webp"
+                                    alt="Caballo Marrón" style="width: 150px;"></td>
+                            <td>Caballo</td>
+                            <td>Los caballos son criaturas domesticables que pueden servir para la exploración, las variantes pueden aparecer en uno de varios colores de piel diferentes que exhiben manchas o rasgos diferentes.</td>
+                            <td>Los caballos esqueletos son las únicas criaturas no muertas pasivas, domesticables que no desaparecen en dificultad pacífica. (los caballos zombis también, pero no pueden ser domesticados)</td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/img/view3/mob/Pig_JE3_BE2.webp" style="width: 150px;"
+                                    alt="Cerdo"></td>
+                            <td>Cerdo</td>
+                            <td>Un cerdo es una criatura pasiva que se encuentra comúnmente en la mayoría de los biomas de hierba.</td>
+                            <td>Los cerdos son una fuente de chuletas de cerdo y se les puede equipar con una montura para ser conducidos.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/img/view3/mob/Polar_Bear.webp" style="width: 150px;"
+                                    alt="Oso Polar"></td>
+                                    <td>Oso polar</td>
+                            <td>Los osos polares son criaturas neutrales que viven en biomas fríos.</td>
+                            <td>Según Jeb, los osos polares fueron agregados después de que su hijo, Björn, naciera. Coincidentemente, "björn" es el nombre sueco para el "oso".</td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/img/view3/mob/640px-Enderman_JE3_BE1.webp" style="width: 200px;"
+                                    alt="Enderman"></td>
+                            <td>Enderman</td>
+                            <td>El Enderman es un monstruo poco común de estatura alta, delgada y de color negro con ojos rosados.</td>
+                            <td>Es originario de de la dimensión del End, puede teletransportarse y agarrar una serie de bloques.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/img/view3/mob/Zombie_JE3_BE2.webp" style="width: 150px;"
+                                    alt="Zombie"></td>
+                            <td>Zombie</td>
+                            <td>Mob explosivo que ataca en sigilo.</td>
+                            <td>Los zombis, los hombrecerdo zombis y los esqueletos y Esqueletos del Wither son las únicas criaturas capaces de llevar armadura, el resto de criaturas hostiles no pueden.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/img/view3/mob/Esqueleto.webp" style="width: 150px;"
+                                    alt="Esqueleto"></td>
+                            <td>Esqueleto</td>
+                            <td>El esqueleto es una criatura hostil común y no muerta que va equipada con un arco y flechas.</td>
+                            <td>En Halloween, algunos de los esqueletos aparecerán con una calabaza en la cabeza con una probabilidad del 22.5% o calabaza iluminada con un 2.5%. </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        </div>
+
+        
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Wikicraft. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

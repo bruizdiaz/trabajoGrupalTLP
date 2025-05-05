@@ -1,0 +1,87 @@
+* {/* RESET DE LOS ESTILOS POR DEFECTO */
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.611);
+    position: relative;
+    font-weight: 800;
+}
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece para mejor contraste */
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.611);
+    position: relative;
+}
+footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece para mejor contraste */
+}
+
+
+/* FONDOS DE LAS DISTINTAS VISTAS */
+.viewIndex { /* Vista principal */
+    background-image: url(img/fondo.png); /* Fondo del Overworld */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-clip: cover;
+}
+.viewUno { /* Vista de la primera sección */
+    background-image: url(img/fondonether.png); /* Fondo del Nether */
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.viewEnd { /* Vista de la segunda sección */
+    background-image: url(img/endstoneBackground.webp); /* Fondo del End */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.viewPortal { /* Vista del portal */
+    background-image: url(img/portalBackground.webp); /* Fondo del portal */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.crafteos {
+    background-color: rgba(255, 255, 255, 0.63);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link img {
+    width: 40px;
+    /* Ajusta el ancho del logo */
+    height: 40px;
+    /* Ajusta la altura del logo */
+    object-fit: contain;
+    /* Asegura que la imagen no se deforme */
+    display: block;
+    margin: 0 auto;
+    /* Centra la imagen */
+}
+
+.carrusel{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
